@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Projects\\QueueSystem\\queue\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\queue.bundle.scp.css",
-      "PackagePath": "staticwebassets\\queue.bundle.scp.css"
+      "PackagePath": "staticwebassets\\queue.93ljy899cl.bundle.scp.css"
     },
     {
       "Id": "C:\\Projects\\QueueSystem\\queue\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
@@ -67,6 +67,10 @@
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.queue.props",
       "PackagePath": "buildTransitive\\queue.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.queue.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.queue.Microsoft.AspNetCore.StaticWebAssets.props",

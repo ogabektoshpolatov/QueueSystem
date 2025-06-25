@@ -30,3 +30,6 @@ C:\Projects\QueueSystem\queue\obj\Debug\net8.0\refint\queue.dll
 C:\Projects\QueueSystem\queue\obj\Debug\net8.0\queue.pdb
 C:\Projects\QueueSystem\queue\obj\Debug\net8.0\queue.genruntimeconfig.cache
 C:\Projects\QueueSystem\queue\obj\Debug\net8.0\ref\queue.dll
+C:\Projects\QueueSystem\queue\bin\Debug\net8.0\queue.staticwebassets.endpoints.json
+C:\Projects\QueueSystem\queue\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Projects\QueueSystem\queue\obj\Debug\net8.0\staticwebassets\msbuild.queue.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
