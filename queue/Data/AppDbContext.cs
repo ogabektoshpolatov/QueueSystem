@@ -6,9 +6,12 @@ namespace queue.Data;
 public class AppDbContext:DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options):base(options) { }
+    
+    # region database entities
     public DbSet<Product> Products { get; set; }
     public DbSet<Order> Orders { get; set; }
     public DbSet<OrderProduct> OrderProducts { get; set; }
+    #endregion
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -18,6 +21,5 @@ public class AppDbContext:DbContext
                                                                    .HasForeignKey(op => op.OrderId);
         
         base.OnModelCreating(modelBuilder);
-        
     }
 }
