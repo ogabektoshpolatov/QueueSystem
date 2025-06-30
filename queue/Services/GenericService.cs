@@ -19,6 +19,17 @@ public class GenericService<T>:IGenericService<T> where T : class
         return await _dbSet.FindAsync(id);
     }
 
+    public async Task<IEnumerable<T>> GetPagedAsync(int page = 1, int pageSize = 10)
+    {
+        if(page <=0 || pageSize <= 0)
+            page = 1; pageSize = 10;
+        
+        return await _dbSet
+            .Skip((page-1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+    }
+
     public virtual async Task<IEnumerable<T>> GetAllAsync()
     {
         return await _dbSet.ToListAsync(); 

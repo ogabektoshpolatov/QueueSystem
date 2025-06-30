@@ -1,6 +1,8 @@
-﻿namespace queue.Services.Interfaces;
+﻿using queue.Entities;
 
-public class IProductService
+namespace queue.Services.Interfaces;
+
+public interface IProductService:IGenericService<Product>
 {
     
 }
