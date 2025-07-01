@@ -1,0 +1,11 @@
+@page "/Products"
+@using queue.Entities
+
+<RadzenDataGrid AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="5" AllowPaging="true" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true"
+                Data="@AllProducts" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or" SelectionMode="DataGridSelectionMode.Single">
+    <Columns>
+        <RadzenDataGridColumn Property="@nameof(Product.Id)" Filterable="false" Title="ID" Frozen="true" Width="80px" TextAlign="TextAlign.Center" />
+        <RadzenDataGridColumn Property="@nameof(Product.Name)" Title="Name" Frozen="true" Width="160px" />
+        <RadzenDataGridColumn Property="@nameof(Product.Name)" Title="Name" Frozen="true" Width="160px" />
+    </Columns>
+</RadzenDataGrid>

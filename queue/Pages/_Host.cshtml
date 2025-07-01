@@ -1,4 +1,6 @@
 ﻿@page "/"
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Radzen.Blazor
 @namespace queue.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
@@ -6,3 +8,5 @@
 }
 
 <component type="typeof(App)" render-mode="ServerPrerendered" />
+<component type="typeof(RadzenTheme)" render-mode="ServerPrerendered" param-Theme="@("material")" />
+<script src="_content/Radzen.Blazor/Radzen.Blazor.js?v=@(typeof(Radzen.Colors).Assembly.GetName().Version)"></script>

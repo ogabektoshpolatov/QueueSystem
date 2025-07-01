@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using queue.Data;
+using queue.Services;
+using queue.Services.Interfaces;
+using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-
+builder.Services.AddRadzenComponents();
+builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));

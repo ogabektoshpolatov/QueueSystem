@@ -13,10 +13,17 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+    <PackageReference Include="Radzen.Blazor" Version="7.1.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\Products.cs">
+      <DependentUpon>Products.razor</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>
