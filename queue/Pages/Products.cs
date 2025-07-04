@@ -10,9 +10,13 @@ public partial class Products
     public IProductService ProductService { get; set; } 
     public List<Product> AllProducts { get; set; } = new();
     
-
     protected override async Task OnInitializedAsync()
     {
         AllProducts = (await ProductService.GetPagedAsync(1, 10)).ToList();
+    }
+
+    private async Task Add()
+    {
+        await Task.Delay(1);
     }
 }
